@@ -1,0 +1,41 @@
+/* ============================================================
+   Hay Day Manager — Estilos globais
+   ============================================================ */
+
+body { background-color: #fdf6e3; }
+
+/* Tabs */
+.tab-btn.active {
+  background-color: #ca8a04;
+  color: white;
+  border-color: #ca8a04;
+}
+
+/* Cards de recurso */
+.resource-card { transition: transform 0.15s ease; }
+.resource-card:hover { transform: translateY(-2px); }
+
+/* Receitas */
+.recipe-card { border-left: 4px solid #ca8a04; }
+
+/* Barra de progresso */
+.progress-bar { transition: width 0.5s ease; }
+
+/* Botões de quantidade */
+.qty-btn { user-select: none; }
+
+/* Spinner de número */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { opacity: 1; }
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: #fef9c3; }
+::-webkit-scrollbar-thumb { background: #ca8a04; border-radius: 3px; }
+
+/* Animação do resultado da simulação */
+.sim-result-enter { animation: fadeIn 0.3s ease; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
